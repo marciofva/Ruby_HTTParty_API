@@ -1,0 +1,142 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "valeTroca": {
+      "$id": "/properties/valeTroca",
+      "type": "array",
+      "items": {
+        "$id": "/properties/valeTroca/items",
+        "type": "object",
+        "properties": {
+          "codigoValeTroca": {
+            "$id": "/properties/valeTroca/items/properties/codigoValeTroca",
+            "type": "string",
+            "title": "The Codigovaletroca Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "1709184000000005"
+            ]
+          },
+          "dataInicioVigencia": {
+            "$id": "/properties/valeTroca/items/properties/dataInicioVigencia",
+            "type": [
+              "string",
+              "null"
+            ],
+            "title": "The Datainiciovigencia Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "2018-01-24"
+            ]
+          },
+          "dataFimVigencia": {
+            "$id": "/properties/valeTroca/items/properties/dataFimVigencia",
+            "type": [
+              "string",
+              "null"
+            ],
+            "title": "The Datafimvigencia Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "saldos": {
+            "$id": "/properties/valeTroca/items/properties/saldos",
+            "type": "array",
+            "items": {
+              "$id": "/properties/valeTroca/items/properties/saldos/items",
+              "type": "object",
+              "properties": {
+                "tipo": {
+                  "$id": "/properties/valeTroca/items/properties/saldos/items/properties/tipo",
+                  "type": "string",
+                  "title": "The Tipo Schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "",
+                  "examples": [
+                    "utilizado"
+                  ]
+                },
+                "saldo": {
+                  "$id": "/properties/valeTroca/items/properties/saldos/items/properties/saldo",
+                  "type": "object",
+                  "properties": {
+                    "currency": {
+                      "$id": "/properties/valeTroca/items/properties/saldos/items/properties/saldo/properties/currency",
+                      "type": "string",
+                      "title": "The Currency Schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "R$"
+                      ]
+                    },
+                    "valor": {
+                      "$id": "/properties/valeTroca/items/properties/saldos/items/properties/saldo/properties/valor",
+                      "type": "integer",
+                      "title": "The Valor Schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": 0,
+                      "examples": [
+                        0
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "cliente": {
+            "$id": "/properties/valeTroca/items/properties/cliente",
+            "type": "object",
+            "properties": {
+              "cpf": {
+                "$id": "/properties/valeTroca/items/properties/cliente/properties/cpf",
+                "type": "integer",
+                "title": "The Cpf Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  32183616806
+                ]
+              }
+            },
+            "required": [
+              "cpf"
+            ]
+          },
+          "usuario": {
+            "$id": "/properties/valeTroca/items/properties/usuario",
+            "type": "null",
+            "title": "The Usuario Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+              null
+            ]
+          },
+          "status": {
+            "$id": "/properties/valeTroca/items/properties/status",
+            "type": "string",
+            "title": "The Status Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "ATIVO"
+            ]
+          }
+        },
+        "required": [
+          "status"
+        ]
+      }
+    }
+  }
+}

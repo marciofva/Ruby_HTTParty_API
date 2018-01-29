@@ -1,0 +1,75 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "status": {
+      "$id": "/properties/status",
+      "type": "string",
+      "title": "The Status Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "OK"
+      ]
+    },
+    "messages": {
+      "$id": "/properties/messages",
+      "type": "array"
+    },
+    "content": {
+      "$id": "/properties/content",
+      "type": "object",
+      "properties": {
+        "available_business_days": {
+          "$id": "/properties/content/properties/available_business_days",
+          "type": "array",
+          "items": {
+            "$id": "/properties/content/properties/available_business_days/items",
+            "type": "string",
+            "title": "The 0 Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "2018-02-16"
+            ]
+          }
+        }
+      }
+    },
+    "time": {
+      "$id": "/properties/time",
+      "type": "string",
+      "title": "The Time Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "0.2 ms"
+      ]
+    },
+    "timezone": {
+      "$id": "/properties/timezone",
+      "type": "string",
+      "title": "The Timezone Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "America/Sao_Paulo"
+      ]
+    },
+    "locale": {
+      "$id": "/properties/locale",
+      "type": "string",
+      "title": "The Locale Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "pt_BR"
+      ]
+    }
+  },
+  "required": [
+    "status"
+  ]
+}

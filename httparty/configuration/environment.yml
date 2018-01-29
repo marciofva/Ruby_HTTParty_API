@@ -1,0 +1,7 @@
+#------------------#
+#      QA          #
+#------------------#
+qa:
+  server: 'https://api.intelipost.com.br'
+  homolog: 'https://homologacao.pagador.com.br'
+  valetroca: 'http://172.27.10.193/Financeiro/ValeTroca'

@@ -1,0 +1,4 @@
+default: --format html --out=Report.html
+#default: --no-source --color --format pretty
+#default: --format html --out=Report.html
+qa:                               ENV="qa" debug=true

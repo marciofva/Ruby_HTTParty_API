@@ -1,0 +1,24 @@
+RCHLO:
+#------------------#
+#      QA          #
+#------------------#
+  qa:
+    valid:
+      username: SVC-OSB-COM-PLATAFOR
+      password: R!4chu3l0
+
+    invalid_username:
+      username: SVC-OSB-COM
+      password: R!4chu3l0
+
+    empty_username:
+      username:
+      password: R!4chu3l0
+
+    invalid_password:
+      username: SVC-OSB-COM-PLATAFOR
+      password: lockdownabc
+
+    empty_password:
+      username: SVC-OSB-COM-PLATAFOR
+      password:

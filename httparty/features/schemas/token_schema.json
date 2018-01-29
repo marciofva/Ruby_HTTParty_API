@@ -1,0 +1,54 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "properties": {
+    "MerchantId": {
+      "$id": "/properties/MerchantId",
+      "type": "string",
+      "title": "The Merchantid Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "BC5D3432-527F-40C6-84BF-C549285536BE"
+      ]
+    },
+    "AccessToken": {
+      "$id": "/properties/AccessToken",
+      "type": "string",
+      "title": "The Accesstoken Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "YjlkNDJiMzItMzc1OS00YTJmLWJkNGItYTUwMGRkNGEwOTJiLTE4MzMyNDczNjg="
+      ]
+    },
+    "Issued": {
+      "$id": "/properties/Issued",
+      "type": "string",
+      "title": "The Issued Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2018-01-23T17:21:55"
+      ]
+    },
+    "ExpiresIn": {
+      "$id": "/properties/ExpiresIn",
+      "type": "string",
+      "title": "The Expiresin Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2018-01-23T17:41:55"
+      ]
+    }
+  },
+  "required": [
+    "MerchantId",
+    "AccessToken",
+    "Issued",
+    "ExpiresIn"
+  ]
+}
